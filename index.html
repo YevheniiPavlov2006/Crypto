@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+  <div class="wrapper">
+    <canvas id="chart"></canvas>
+    <div class="contant">
+      <div class="buttons-block">
+        <img class="btc coin-btn" src="img/btc.png" alt="">
+        <img class="bnb coin-btn" src="img/bnb.png" alt="">
+        <img class="eth coin-btn" src="img/eth.png" alt="">
+      </div>
+      <div class="info">
+        <img class="coin-img1" src="img/btc.png" alt="">
+        <img class="coin-img2" src="img/bnb.png" alt="">
+        <img class="coin-img3" src="img/eth.png" alt="">
+        <div class="info-content">
+          <div class="title">BTC/USD</div>
+          <div class="info-content-text">
+            <div class="text"></div>
+            <div class="grow" id="grow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="information-block">
+      <div class="information">
+        <div class="information-price"></div>
+        <div class="information-date"></div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
