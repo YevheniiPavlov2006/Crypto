@@ -66,8 +66,8 @@ async function requestRate() {
     const grow = document.getElementById('grow')
     if (text && price.length > 0) {
       text.textContent = `${price[price.length - 1].toFixed(2)}`;
-      grow.innerHTML = `${(((price[price.length - 1] - price[price.length - 1000]) / price[price.length - 1]) * 100).toFixed(2)} % <span>1h<span/>`
-      if((((price[price.length - 1] - price[price.length - 360]) / price[price.length - 1]) * 100).toFixed(2) > 0){
+      grow.innerHTML = `${(((price[price.length - 1] - price[price.length - 361]) / price[price.length - 1]) * 100).toFixed(2)} % <span>6h<span/>`
+      if((((price[price.length - 1] - price[price.length - 361]) / price[price.length - 1]) * 100).toFixed(2) > 0){
         grow.style.color = "rgb(10, 182, 10)"
       } else {
         grow.style.color = "rgb(239, 15, 15)"
